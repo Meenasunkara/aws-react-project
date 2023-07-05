@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+// index.js
+import { createRoot } from 'react-dom/client';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Amplify } from 'aws-amplify';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+/**
+ * Following along with the
+ * tutorial https://ui.docs.amplify.aws/react/guides/auth-protected?
+ * Update this import to match the path to your aws-exports.js file:
+ * import aws_exports from "./aws-exports";
+ */
+import aws_exports from "./aws-exports";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import './index.css';
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+Amplify.configure(aws_exports);
+root.render(<App />);
