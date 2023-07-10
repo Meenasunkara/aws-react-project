@@ -23,9 +23,9 @@ export function Layout() {
          
         
         {route !== 'authenticated' ? (
-          <Button onClick={() => navigate('/login')}>Login</Button>
+          <Button onClick={() => navigate('/login')} >Login</Button>
         ) : (
-          <Button onClick={() => logOut()}style={{ backgroundColor: 'white ', color: 'purple' }}>Logout</Button>
+          <Button onClick={() => logOut()}style={{ backgroundColor: 'white ', color: 'purple' }}>Signout</Button>
         )}
       </nav>
       <Heading level={1}>IOT App</Heading>

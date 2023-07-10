@@ -4,27 +4,33 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 export function Home() {
   const { route } = useAuthenticator((context) => [context.route]);
 
   const message =
-    route === 'authenticated' ? 'IOT Dashboard Home page' : 'Loading...';
+    route === 'authenticated' ? '' : 'Loading...';
 
   return (
     <Container>
       <Row className="px-4 my-5">
         <Col xs={4} sm={6}>
-          <Image src="img/iot.jpg" />
+          <Image src="" />
         </Col>
         <Col sm={6}>
-          <h1 className="font-weight-light">IOT App</h1>
+          <h1 className="font-weight-light">IOT Dashboard Home page</h1>
           <p className="mt-4">{message}</p>
           <Link to="/devices">
-            <Button variant="outline-primary">View Devices &gt;&gt;</Button>
-          </Link>
-        </Col>
+          <DropdownButton id="dropdown-item-button" title="View Devices">
+          <Dropdown.Menu>
+          <p> <Dropdown.Item as="button">Device1</Dropdown.Item></p>
+          <p> <Dropdown.Item as="button">Device2</Dropdown.Item> </p> 
+          <p> <Dropdown.Item as="button">Device3</Dropdown.Item> </p> 
+          </Dropdown.Menu> 
+        </DropdownButton>
+        </Link>
+       </Col>
       </Row>
     </Container>
   );

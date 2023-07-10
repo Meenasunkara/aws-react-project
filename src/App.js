@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Authenticator } from '@aws-amplify/ui-react';
+import { Authenticator, Image,View, useTheme } from '@aws-amplify/ui-react';
 
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
@@ -13,12 +13,35 @@ import { User } from './components/User';
 import Devices from './components/Devices';
 
 
+
 import './App.css';
 
+
 function App() {
+  const components = {
+    Header() {
+      const { tokens } = useTheme();
+  
+      return (
+        <View textAlign="center" padding={tokens.space.large} >
+         <Image
+  src={require('./iot1.jpg')}
+  alt="Image"
+  style={{
+    width: '200px',
+    height: 'auto',
+    mixBlendMode: 'multiply',
+  }}
+/>
+          <h1 style={{ color: '#801066', fontWeight: 'bold' }}>IOT Dashboard</h1>
+        </View>
+      );
+    }
+  };
+
   return (
     
-    <Authenticator >
+    <Authenticator hideSignUp={true} components={components}>
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
