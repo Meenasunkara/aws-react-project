@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -153,3 +154,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # aws-react-project
 >>>>>>> 8d2142cec65ea49c8c6673824c922e9c74f522ce
+=======
+# aws-react-project
+A simple and Basic IOT dashboard created using  React-Amplify UI, with Amplify Authenticator and React Bootstrap Components and hooks.
+>>>>>>> 2e7b880bca0bd52c180561b827a19f27c0352f68
