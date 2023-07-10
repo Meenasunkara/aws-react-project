@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -149,3 +150,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # aws-react-project
 >>>>>>> origin/main
 >>>>>>> 826a17a8b487e3fa5902917bbbc4fa61c239c102
+=======
+# aws-react-project
+>>>>>>> 8d2142cec65ea49c8c6673824c922e9c74f522ce

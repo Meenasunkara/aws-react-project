@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -46,6 +47,8 @@ amplifytools.xcconfig
 **.sample
 #amplify-do-not-edit-end
 =======
+=======
+>>>>>>> 8d2142cec65ea49c8c6673824c922e9c74f522ce
 # Logs
 logs
 *.log
@@ -176,6 +179,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
 >>>>>>> origin/main
 =======
 <<<<<<< HEAD
@@ -357,3 +361,5 @@ dist
 .pnp.*
 >>>>>>> origin/main
 >>>>>>> 826a17a8b487e3fa5902917bbbc4fa61c239c102
+=======
+>>>>>>> 8d2142cec65ea49c8c6673824c922e9c74f522ce
